@@ -1,0 +1,2051 @@
+
+/* ----------------------------------------------------DESKTOP (1680x1050) ------------------- */
+@media(max-width: 1680px){
+  .contentSection{
+    width: 70%;
+  }  
+}
+
+/* ---------------------------------------------------LAPTOP (1440x900) ------------------- */
+@media(max-width: 1440px) and (max-height:900px){
+
+ main {
+    font-size: 20px;
+  }
+
+  .contentSection{
+    width: 75%;
+  }  
+
+/*---------------------A propos de moi  */
+
+    #AboutMe_introContainer {
+        /*-- photo + "<h1> et <p> :à propos de moi"--*/
+        height: 330px;
+      }
+      
+      #myPicture_container {
+        width: 300px;
+        height:330px;
+      }
+      
+      #myPicture {
+        width: 300px;
+        height: 330px;
+      }
+      hr {
+        margin-top: -18px;
+      }
+      
+      #devLike {
+        margin-top: 45px;
+      }
+      
+      #lifeLike {
+        margin-top: 45px;
+      }
+   
+      .candidacy_btn {
+        margin-top: 45px;
+      }
+      
+    
+    
+  /*-------------------------- Mes compétences */ 
+
+  h1 {
+    font-size: 55px;
+    margin: 55px 0px 55px 0px;
+  }
+
+  #cardsContainer {
+    height: 600px;
+}
+
+
+/*---------------------------- Projects */ 
+
+.slideshow-container {
+  height: 450px;
+}
+
+.mySlides{
+  height: 100%;
+}
+/*Boutons Next & previous*/
+.prev, .next {
+  top: 50%;
+}
+
+#imgProject {
+  width: 100%;
+  height: 100%;
+  margin-top: 0px;
+}
+
+.infosProjects_container{
+  color:blue;
+  font-size: 20px;
+}
+
+#responsive{
+  font-size: 20px;
+  margin-top:1%;
+}
+
+#linksProject_Container{
+  width: 35%;
+  margin-top:3%;
+}
+
+
+ /*---------------------------- Formation */ 
+
+ #imgPc_container{
+    height: 580px;
+  }
+
+
+ /*---------------------------- Contact */
+
+#contact {
+  margin-bottom: 300px !important;
+}
+
+#formContainer { 
+   padding: 20px 0 20px 0;
+}
+
+ form{
+   width:75%;
+}
+}
+
+
+  /* ---------------------------------------- IPAD PRO 12.9-inch (1366x1163) PAYSAGE------------------- */
+  @media(max-width: 1366px) and (max-height:1163px) and (orientation:landscape){
+  
+    main {
+     font-size: 24px;
+   }
+         
+  /*---------------------------- A propos de moi  */
+    #presentation {
+      margin-top: 25vh;
+    }
+
+    #aboutMe_title{
+      font-size: 65px;
+      margin: 80px 0px 60px 0px;
+    }
+
+    #devLike {
+      margin-top: 60px;
+    }
+     
+    #lifeLike {
+      margin-top: 60px;
+    }
+      
+    .candidacy_btn {
+      margin-top: 60px;
+    }
+
+
+/*------------------------ Mes compétences */ 
+
+h1 {
+  font-size: 65px;
+  margin: 100px 0px 110px 0px;
+}
+
+ #cardsContainer {
+    height: 800px;
+}
+
+.cards{
+  margin: bottom 30px; ;
+}
+
+
+/*---------------------------- Projects */ 
+
+#projects {
+  margin-bottom: 250px;
+}
+
+.slideshow-container {
+   height: 650px;
+}
+  
+.mySlides{
+  height: 100%;
+}
+
+/*Boutons Next & previous*/
+.prev, .next {
+  top: 50%;
+}
+
+#imgProject {
+  width: 100%;
+  height: 100%;
+  margin-top: 0px;
+}
+ 
+.infosProjects_container{
+  font-size: 21px;
+}
+  
+#responsive{
+  font-size: 21px;
+}
+
+#linksProject_Container{
+  width: 45%;
+  margin-top:5%;
+  margin-bottom: 10%;
+}
+
+  
+/*---------------------------- Formation */ 
+
+#formation {
+  margin-bottom:200px;
+}
+
+#imgPc_container {
+  display: none;
+ }
+  
+#pcLandscape_Container{
+  display: block;
+ }
+  
+#pcLandscape {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  margin-top: 0;
+}
+
+
+/*---------------------------- Contact */ 
+  #contact {
+    margin-bottom: 200px !important;
+  }
+
+  #formContainer {
+    padding: 45px 0 45px 0;
+  }
+
+  .forInput {
+    margin-bottom: 20px;
+  }
+}
+  
+
+/* ---------------------------------------------------LAPTOP (1280x950) ------------------- */
+
+@media(max-width: 1280px) and (max-height:950px){
+
+  main {
+    font-size: 20px;
+  }
+
+/*---------------------------- A propos de moi  */
+
+ #presentation {
+    margin-top: 17vh;
+  }
+
+ #AboutMe_introContainer {
+    /*-- photo + "<h1> et <p> :à propos de moi"--*/
+    height: 330px;
+  }
+
+ #myPicture_container {
+    width: 300px;
+    height:330px;
+  }
+  
+  #myPicture {
+    width: 300px;
+    height: 330px;
+  }
+
+  #devLike {
+    margin-top: 40px;
+  }
+ 
+  #lifeLike {
+    margin-top: 40px;
+  }
+  
+  .candidacy_btn {
+    margin-top: 60px;
+}
+
+
+/*---------------------------- Mes compétences  */
+
+h1 {
+  margin: 55px 0px 55px 0px;
+}
+
+#cardsContainer {
+ height:600px ;
+ margin-bottom: 0;
+}
+
+.cards {
+  margin-bottom: 0px;
+}
+
+
+/*---------------------------- Projets  */
+.slideshow-container{
+  height: 500px;
+}
+
+/*Boutons Next & previous*/
+.prev, .next {
+  top: 50%;
+}
+  
+.infosProjects_container{
+  font-size: 20px;
+}
+
+#responsive{
+  font-size: 20px;
+}
+
+#linksProject_Container{
+  margin-top:7%;
+}
+
+
+/*-------------------------- formation */
+
+#pcLandscape_Container{
+  height: 600px;
+}
+/*-------------------------- contact */
+
+#contact {
+  margin-bottom:25px;
+}
+
+#formContainer {
+  padding: 5px 0 15px 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+}
+
+
+  /* ---------------------------------------------------LAPTOP (1280x800) ------------------- */
+
+@media(max-width: 1280px) and (max-height:800px){
+
+ /*---------------------------- A propos de moi  */
+ .candidacy_btn {
+  margin-top: 30px;
+ }
+/*---------------------------- Projets  */
+
+.slideshow-container{
+  height: 460px;
+}
+
+#linksProject_Container{
+  margin-top:2.5%;
+}
+}
+
+
+  /* --------------------------- IPAD PRO 12.9-inch (1163x1366) PORTRAIT------------------- */
+
+@media(max-width: 1163px) and (max-height:1366px) and (orientation:portrait){
+
+ /*---------------------------- A propos de moi  */
+ /* section sur fond Blanc*/
+ .whiteBg_Container {
+   max-height: none;
+ }
+
+ /* section sur fond Bleu*/
+ .blueBg_Container {
+   max-height: none;
+  }
+
+ #presentation {
+   margin-bottom: 110px;
+ }   
+
+ #aboutMe_title{
+    font-size: 65px;
+    margin: 80px 0px 48px 0px;
+ }
+    
+
+
+
+/*------------------------------ Mes compétences */
+
+#competences {
+  margin-bottom: 55px;
+}
+
+h1 {
+  font-size: 65px;
+  margin: 100px 0px 110px 0px;
+}
+
+
+/*------------------------------------ Projets  */ 
+   
+  #projects{
+    margin-bottom: 110px;
+  }
+
+  /*Boutons Next & previous*/
+ .prev, .next {
+   padding: 10px;
+   font-size: 25px;
+   top: 36%;
+ }
+
+ .infosProjects_container{
+   display: flex;
+   flex-direction: column;
+   font-size: 19px;
+   margin-top: 1.5% ;
+}
+
+#spanInfos_Container{
+ display: flex;
+ justify-content: center;
+ width: 100%;
+ margin-bottom: 5px;
+}
+
+#responsive{
+  font-size: 19px;
+  height: 50px;
+}
+
+#linksProject_Container{
+  width: 40%;
+  margin-top:7%;
+}
+
+
+/*--------------------------  formation */
+
+#formation {
+  margin-bottom: 110px;
+}
+
+#imgPc_container{
+  display: none;
+}
+
+#pcLandscape_Container{
+ display: block;
+ width: 100%;
+}
+
+#pcLandscape{
+  width: 100%;
+}
+
+
+ /*-------------------------- contact */
+
+ #contact {
+   margin-bottom: 110px !important;
+  }
+
+ #formContainer {
+   margin: 0;
+   padding: 20px 0 20px 0;
+}
+}
+
+
+/* --------------------------- IPAD/I PAD MINI (1024x768) PAYSAGE------------------- */
+
+@media(max-width: 1024px) and (max-height:768px) and (orientation:landscape){
+    
+  main {
+    font-size: 20px;
+  }
+
+  .contentSection{
+        width: 80%;
+  }
+
+      
+  /*---------------------------- A propos de moi  */
+  #presentation {
+    margin-top: 15vh;
+  }    
+
+
+  #AboutMe_introContainer {
+    /*-- photo + "<h1> et <p> :à propos de moi"--*/
+    height: 300px;
+  }
+
+  #myPicture_container {
+    width: 240px;
+    height:270px;
+  }
+  
+  #myPicture {
+    width: 240px;
+    height: 270px;
+  }
+
+  #aboutMe_title{
+    font-size: 45px;
+    margin: 60px 0px 30px 0px;
+  }
+
+  hr {
+    margin-top: -45px;
+  }
+
+  #devLike {
+    margin-top: 40px;
+  }
+     
+  #lifeLike {
+    margin-top: 40px;
+  }
+      
+  .candidacy_btn {
+    margin-top: 40px;
+    margin-bottom: 100px;;
+    font-size: 15px;
+    width: 130px;
+  }
+
+  #motivation_button{
+    margin-left: 50px;
+  }
+
+/*---------------------------- Mes compétences  */
+
+h1 {
+  margin: 55px 0px 55px 0px;
+  font-size:45px;
+}
+
+#cardsContainer {
+  height: 600px;
+}
+
+
+/*------------------------------------ Projets  */
+    
+.slideshow-container{
+  height: 440px;
+}
+
+.infosProjects_container{
+  font-size: 19px;
+}
+
+#responsive{
+  height: 35px;
+  font-size: 19px;
+}
+
+#linksProject_Container{
+  margin-top:2.5%;
+}
+
+/*-------------------------- contact */
+
+  #formContainer {
+    padding: 40px 0 40px 0;
+  }
+
+  form{
+    width:80%;
+  }
+
+  .forInput {
+    margin-bottom: 15px;
+  }
+}
+
+ /*------------------------- media Querry pour passer en menu hamburger dès 896px: */
+  @media(max-width: 896px) {
+
+  #icons{
+    display: block;
+  }
+
+  #icons:before{
+    content:"\2630";
+  }
+  
+  /* css permettant d'afficher l'icône pour fermer le menu burger pour classe active (cf code js menu burger dans main.js): */
+
+  .active #icons:before{
+    content:"\2715";
+  }
+  
+  nav ul{
+    z-index: -1;
+    width: 100%;
+    position: fixed;
+    background-color:blue;
+    top:0;
+    left: -100%;
+    flex-direction: column;
+    transition: 0.25s;
+    text-align: center;
+    padding: 80px 0 0 0;
+  }  
+
+  nav li {
+    width: 100%;
+    padding: 5px 0;
+  }
+
+  nav li:hover{
+    background-color: rgb(56, 56, 251);
+    transform: scale(1);
+  }
+
+ nav.active ul{
+   left:0;
+  }
+}
+
+
+/* --------------------------------------------- IPHONE XR (896x414) PAYSAGE------------------- */
+
+ @media(max-width: 896px) and (max-height:414px) and (orientation:landscape){
+
+/* section sur fond Blanc*/.whiteBg_Container {
+  max-height: none;
+}
+  
+main {
+  font-size: 20px;
+}
+
+.contentSection{
+  width: 80%;
+}
+
+    
+/*---------------------------- A propos de moi  */
+#presentation {
+  margin-top: 25vh;
+  margin-bottom: 50px;
+}    
+
+#AboutMe_introContainer {
+  /*-- photo + "<h1> et <p> :à propos de moi"--*/
+  height: 300px;
+}
+
+#myPicture_container {
+  width: 240px;
+  height:270px;
+}
+  
+#myPicture {
+  width: 240px;
+  height: 270px;
+}
+
+#aboutMe_title{
+  font-size: 45px;
+  margin: 60px 0px 30px 0px;
+}
+
+hr {
+  margin-top: -45px;
+}
+
+#devLike {
+  margin-top: 40px;
+}
+     
+#lifeLike {
+  margin-top: 40px;
+}
+      
+.candidacy_btn {
+  margin-top: 40px;
+  margin-bottom: 10px;;
+  font-size: 15px;
+  width: 130px;
+}
+
+#motivation_button{
+  margin-left: 50px;
+}
+
+/*---------------------------- Mes compétences  */
+
+/* section sur fond Bleu*/
+.blueBg_Container {
+  max-height: none;
+}
+
+#competences {
+  margin-bottom: 50px;
+}
+
+h1 {
+  margin: 55px 0px 55px 0px;
+  font-size:45px;
+}
+
+#cardsContainer {
+  height: 600px;
+}
+
+
+/*------------------------------------ Projets  */
+    
+.slideshow-container{
+  height: 460px;
+}
+
+#responsive{
+  margin-top: 2%;
+}
+
+#linksProject_Container{
+  margin-top:8%;
+}
+
+
+/*-------------------------- formation */
+
+#formation {
+  margin-bottom: 50px;
+}
+
+
+/*-------------------------- contact  */
+
+#formContainer {
+  padding: 40px 0 40px 0;
+}
+
+form{
+   width:80%;
+}
+    
+.forInput {
+  margin-bottom: 15px;  
+}
+}
+
+
+/* ------------------------------------------- I PAD MINI (768x1024) PORTRAIT------------------- */
+
+@media(max-width: 768px) and (max-height:1024px) and (orientation:portrait){
+
+  main { 
+  font-size: 18px;
+}
+
+.contentSection {
+  width: 85%;
+}
+
+
+/*---------------------------- A propos de moi  */
+
+#presentation {
+  margin-top: 20vh;
+}
+
+#AboutMe_introContainer {
+  /*-- photo + "<h1> et <p> :à propos de moi"--*/
+  height: 300px;
+}
+
+#myPicture_container {
+  width: 240px;
+  height:270px;
+}
+
+#myPicture {
+  width: 240px;
+  height: 270px;
+}
+  
+#aboutMe_title{
+  font-size: 40px; 
+  margin: 0px 0px 30px 0px;
+}
+
+hr {
+  margin-top: -45px;
+}
+
+.candidacy_btn {
+  margin-top: 65px;
+  font-size: 18px;
+  width: 130px;
+}
+
+#motivation_button{
+  margin-left: 30px;
+}
+
+
+/*------------------------------------ Projets  */ 
+
+#projects {
+  margin-bottom:220px;
+}
+
+h1 {
+  font-size: 45px;
+  margin: 100px 0px 90px 0px;
+}
+
+.slideshow-container {
+  height: 400px;
+}
+ 
+.mySlides{
+  height: 100%;
+}
+
+/*Boutons Next & previous*/
+.prev, .next {
+  top: 52%;
+}
+
+#imgProject {
+  width: 100%;
+  height: 100%;
+  margin-top: 0px;
+}
+
+#spanInfos_Container{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+#linksProject_Container{
+  width: 50%;
+  margin-top:7%;
+}
+}  
+
+
+/* --------------------------- GALAXY S10/ ...NOTE 8 / S8 /S9 (760x360) PAYSAGE------------------- */
+
+@media(max-width:760px) and (max-height:360px) and (orientation:landscape){  
+
+main {
+  font-size: 16px;
+}  
+
+
+/*---------------------------- A propos de moi  */
+/* section sur fond Blanc*/
+.whiteBg_Container {
+  max-height: none;
+}
+
+#presentation {
+  margin-top: 30vh;
+  margin-bottom: 80px;
+}    
+ 
+#AboutMe_introContainer {
+/*-- photo + "<h1> et <p> :à propos de moi"--*/
+height: 200px;
+}
+
+#myPicture_container {
+ width: 170px;
+ height:200px;
+}
+
+#myPicture {
+ width: 170px;
+ height: 200px;
+}
+
+#aboutMe_title{
+  font-size: 35px;
+  margin: 40px 0px 30px 0px;
+}
+
+hr {
+  margin-top: -10px;
+}
+
+#devLike {
+  margin-top: 20px;
+}
+
+#lifeLike {
+  margin-top: 20px;
+}
+
+.candidacy_btn {
+  margin-top: 30px;
+  margin-bottom: 0;
+  font-size: 16px;
+}
+
+#cv_button img{
+  width: 20px;
+  height: 20px;
+}
+
+#motivation_button{ 
+  margin-left: 15px;
+}
+
+
+/*---------------------------- Mes compétences  */
+
+#competences {
+  margin-bottom: 30px;
+}
+
+h1 {
+  margin: 45px 0px 45px 0px;
+  font-size:35px;
+}
+
+#cardsContainer {
+  height: 480px;
+}
+
+
+/*------------------------------------ Projets  */
+   
+#projects {
+  margin-bottom:165px;
+}
+
+.slideshow-container{
+  height: 300px;
+}
+
+/*Boutons Next & previous*/
+.prev, .next {
+  padding: 10px;
+  font-size: 25px;
+  top: 50%;
+}
+
+.infosProjects_container{
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;  
+}
+
+#spanInfos_Container{
+ display: flex;
+ justify-content: center;
+ width: 100%;
+ margin-bottom: 5px;
+}
+
+#responsive{
+  font-size: 16px;
+}
+
+#linksProject_Container{
+ width: 60%;
+ margin-top:7%; 
+}
+
+#url{
+  font-size: 16px;
+}
+
+#githubUrl{
+  font-size: 16px;
+}
+
+
+/*--------------------------  formation */
+
+#formation {
+  margin-bottom: 80px;
+}
+
+#imgPc_container {
+  display: none;
+}
+
+#pcLandscape_Container{
+  display: none;
+}
+
+#tabLandscape_Container{
+  display: block; 
+}
+
+#tabLandscape {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin-top: 0;
+} 
+
+
+/*-------------------------- contact */
+
+#contact {
+  margin-bottom: 80px;
+}
+
+#formContainer {
+  margin-bottom: 0;
+  padding: 20px 0 20px 0;
+}
+
+form{
+  width:90%;
+}
+
+.forInput {
+  margin-bottom: 5px;
+}
+
+::placeholder{
+  font-size: 16px;
+}
+
+#name {
+  height: 25px;
+}
+
+#firstName {
+  height: 25px;
+}
+
+#compagny {
+  height: 25px;
+}
+
+#location {
+  height: 25px;
+}
+
+#mail {
+  height: 25px;
+}
+
+#message-contact {
+  font-size: 16px !important;
+  height: 90px;
+}
+
+#mailButton {
+  height: 30px;
+  font-size: 16px
+}
+}
+
+
+ /* --------------------------- IPHONE 6/7/8 PLUS (736x414) PAYSAGE------------------- */
+
+@media(max-width:736px) and (max-height:414px) and (orientation:landscape){ 
+
+/* section sur fond Blanc*/
+.whiteBg_Container {
+  max-height: none;
+}
+
+/* section sur fond Bleu*/
+.blueBg_Container {
+  max-height: none;
+}
+
+main {
+  font-size: 16px;
+}
+
+/*-----------------------------A propos de moi */
+
+#presentation {
+  margin-top: 30vh;
+  margin-bottom: 80px;
+}    
+
+#AboutMe_introContainer {
+/*-- photo + "<h1> et <p> :à propos de moi"--*/
+ height: 200px;
+}
+
+#myPicture_container {
+ width: 170px;
+ height:200px;
+}
+
+#myPicture {
+ width: 170px;
+ height: 200px;
+}
+
+#aboutMe_title{
+  font-size: 35px;
+  margin: 40px 0px 30px 0px;
+}
+
+hr {
+  margin-top: -12px;
+}
+
+#devLike {
+  margin-top: 20px;
+}
+
+#lifeLike {
+  margin-top: 20px;
+}
+
+.candidacy_btn {
+  margin-top: 30px;
+  margin-bottom: 0;
+  font-size: 16px;
+}
+
+#cv_button img{
+  width: 20px;
+  height: 20px;
+}
+
+#motivation_button{
+  margin-left: 15px;
+}
+
+
+/*---------------------------- Mes compétences  */
+
+/* section sur fond Bleu*/
+.blueBg_Container {
+  max-height: none;
+}
+
+#competences {
+  margin-bottom: 30px;
+}
+
+h1 {
+  margin: 45px 0px 45px 0px;
+  font-size:35px;
+}
+
+#cardsContainer {
+  height: 480px;
+}
+
+
+/*------------------------------------ Projets  */
+   
+#projects {
+  margin-bottom:165px;
+}
+
+.slideshow-container{
+  height: 300px;
+}
+
+/*Boutons Next & previous*/
+.prev, .next {
+  padding: 10px;
+  font-size: 25px;
+  top: 50%;
+}
+
+.infosProjects_container{
+  font-size: 16px;
+}
+
+#responsive{
+  font-size: 16px;
+  margin-top: 2%;
+}
+
+#linksProject_Container{
+  width: 65%;
+  margin-top:5% ;
+}
+
+#url{
+  font-size: 16px;
+}
+
+#githubUrl{
+  font-size: 16px;
+}
+
+
+/*--------------------------  formation */
+
+#formation {
+  margin-bottom: 80px;
+}
+
+#imgPc_container {
+  display: none;
+}
+
+#pcLandscape_Container{
+  display: none;
+}
+
+#tabLandscape_Container{
+  display: block; 
+}
+
+#tabLandscape {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin-top: 0;
+} 
+
+
+/*-------------------------- contact */
+
+#contact {
+  margin-bottom: 80px;
+}
+
+#formContainer {
+  margin-bottom: 0;
+  padding: 20px 0 20px 0;
+}
+
+form{
+  width:90%;
+}
+
+.forInput {
+  margin-bottom: 5px;
+}
+
+::placeholder{
+  font-size: 16px;
+}
+
+#name {
+  height: 25px;
+}
+
+#firstName {
+  height: 25px;
+}
+
+#compagny {
+  height: 25px;
+}
+
+#location {
+  height: 25px;
+}
+
+#mail {
+  height: 25px;
+}
+
+#message-contact {
+  font-size: 16px !important;
+  height: 90px;
+}
+
+#mailButton { 
+  height: 30px;
+  font-size: 16px
+}
+}
+
+
+/* ------------------------------------------ IPHONE XR (414x896) PORTRAIT------------------------------- */
+@media(max-width: 414px) and (max-height:896px) and (orientation:portrait){
+
+main { 
+  font-size: 16px;
+}
+
+/*-----------------------A propos de moi */
+
+/* section sur fond Blanc*/
+.whiteBg_Container {
+  max-height: none;
+  display: flex;
+}
+
+#presentation {
+ margin-top: 16vh;
+ margin-bottom: 60px;
+}
+
+#AboutMe_introContainer {
+ /*-- photo + "<h1> et <p> :à propos de moi"--*/
+ flex-direction: column;
+}
+
+#myPicture_container {
+ width: 100%;
+ display: flex;
+ height: 210px;
+}
+
+#myPicture {
+ width: 189px;
+ height: 210px;
+}
+
+#aboutMe{
+ width: 100%;
+}
+
+#aboutMe_title { 
+ font-size: 30px;
+ margin: 20px 0px 35px 0px;
+}
+
+hr {
+ margin-top: -102px;
+}
+
+#devLike {
+ margin-top: 215px;
+}
+
+#lifeLike {
+ margin-top: 20px;
+}
+
+#documents_candidacy{
+ flex-direction: column;
+ align-items: center;
+}
+
+.candidacy_btn {
+ width:180px ;
+ font-size: 15px;
+}
+
+#cv_button {
+ margin-top: 50px;
+}
+
+#cv_button img{
+ width: 15px;
+ height: 15px;
+}
+
+#motivation_button{
+ margin-top: 15px;
+ margin-left: 0px;
+}
+
+
+/*---------------------------- Mes compétences  */
+
+/* section sur fond Bleu*/
+ .blueBg_Container {
+  max-height: none;
+}
+
+#competences {
+  margin-bottom: 120px;
+}
+
+h1 {
+  margin: 30px 0px 40px 0px;
+  font-size:30px;
+}
+
+#cardsContainer {
+  height: 600px;
+  justify-content: space-around;
+}
+
+.cards {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  width: 45%;
+  height:20%;
+}
+ 
+/*------------------------------------ Projets  */
+#projects {
+  margin-bottom: 260px;
+}
+
+.slideshow-container{
+  height: 200px;
+}
+
+/*Boutons Next & previous*/
+.prev, .next {
+  padding: 8px;
+  font-size: 20px;
+  top: 50%;  
+}
+
+.infosProjects_container {
+  display: flex;
+  flex-direction: column;
+  font-size: 15px;
+}
+
+#spanInfos_Container{
+  display: flex;
+  flex-direction: column;
+}
+      
+#projectTitle{
+  text-align: center;
+}
+      
+#techno{
+  text-align: center;
+}
+
+#responsive{
+  margin-top: 2%;
+  font-size: 15px;
+}
+
+#linksProject_Container{
+ flex-direction: column;
+  align-items: center;
+  margin-top:8%;  
+}
+
+#url{
+  font-size: 16px;
+  padding: 3px 21px ;
+}
+  
+#githubUrl{
+  font-size: 16px;
+  padding: 3px 24px ;
+  margin-top: 15px;
+}
+
+
+  /*--------------------------  formation */
+
+#formation {
+  margin-bottom: 80px;
+}
+
+#imgPc_container {
+  display: none;
+}
+
+#pcLandscape_Container{
+  display: none;
+}
+
+
+#tablette_container{
+  display: block;
+}
+
+#tablette{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin-top: 0;
+}
+
+
+/*-------------------------- contact */
+
+#contact {
+  margin-bottom: 120px;
+}
+
+#formContainer {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 40px 0 40px 0;
+}
+
+.direction{
+  flex-direction: column;
+  margin-top: 0;
+}
+
+.forInput {
+  margin-bottom: 30px;
+}
+
+::placeholder{
+  font-size: 16px;
+}
+
+#name {
+  width: 98%;
+  height: 25px;
+  font-size: 16px;
+}
+
+#firstName {
+  width: 98%;
+  height: 25px;
+  margin-top: 0px;
+  font-size: 16px;
+}
+
+#compagny {
+  width: 98%;
+  height: 25px;
+  font-size: 16px;
+}
+
+#location {
+  width: 98%;
+  height: 25px;
+  margin-top: 0px;
+  font-size: 16px;
+}
+
+#mail {
+  width: 100%;
+  height: 25px;
+  margin-top: 0;
+  font-size: 16px;
+}
+
+#message-contact {
+  width: 100%;
+  height: 90px;
+  margin-top: 0px;
+  font-size: 16px !important;
+}
+
+#button_container {
+  margin-top: 0;
+}
+
+#mailButton {
+  height: 25px;
+  font-size: 16px;
+}
+}
+
+/* --------------------------- IPHONE 6/7/8 PLUS (414x736) PORTRAIT------------------- */
+
+@media(max-width: 414px) and (max-height:736px) and (orientation:portrait){
+
+  main { 
+   font-size: 16px;
+ }
+
+  /*---------------------A propos de moi */
+
+  /* section sur fond Blanc*/
+ .whiteBg_Container {
+   max-height: none;
+   display: flex;
+ }
+
+ #presentation {
+   margin-top: 16vh;
+   margin-bottom: 60px;
+ }
+
+ #AboutMe_introContainer {
+   /*-- photo + "<h1> et <p> :à propos de moi"--*/
+   flex-direction: column;
+ }
+
+ #myPicture_container {
+   width: 100%;
+   display: flex;
+   height: 210px;
+  }
+
+ #myPicture {
+   width: 189px;
+   height: 210px;
+ }
+
+ #aboutMe{
+   width: 100%;
+ }
+
+ #aboutMe_title { 
+   font-size: 30px;
+   margin: 20px 0px 35px 0px;
+ }
+
+ hr {
+   margin-top: -102px;
+ }
+
+ #devLike {
+   margin-top: 215px;
+ }
+
+ #lifeLike {
+   margin-top: 20px;
+ }
+
+ #documents_candidacy{
+   flex-direction: column;
+   align-items: center; 
+ }
+
+ .candidacy_btn {
+   width:180px ;
+   font-size: 15px;
+ }
+
+ #cv_button {
+   margin-top: 30px;
+ }
+
+ #cv_button img{
+   width: 15px;
+   height: 15px;
+ }
+
+ #motivation_button{
+   margin-top: 15px;
+   margin-left: 0px;
+  }
+
+
+/*---------------------------- Mes compétences  */
+
+/* section sur fond Bleu*/
+.blueBg_Container {
+  max-height: none;
+}
+
+#competences {
+  margin-bottom: 145px;
+}
+
+h1 {
+  margin: 30px 0px 40px 0px;
+  font-size:30px;
+}
+
+#cardsContainer {
+  height: 600px;
+  justify-content: space-around;
+}
+
+.cards {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  width: 45%;
+  height:20%;
+}
+ 
+
+/*------------------------------------ Projets  */
+
+#projects {
+  margin-bottom: 260px;
+}
+
+.slideshow-container{
+  height: 200px;
+}
+
+/*Boutons Next & previous*/
+.prev, .next {
+  padding: 8px;
+  font-size: 20px;
+  top: 50%;  
+}
+
+.infosProjects_container {
+  font-size: 15px;
+  margin-top: 0.5%;
+}
+
+#responsive{
+  font-size: 15px;
+}
+
+
+/*-------------------------- formation */
+
+#formation {
+  margin-bottom: 80px;
+}
+
+#imgPc_container {
+  display: none;
+}
+
+#pcLandscape_Container{
+  display: none;
+}
+
+
+#tablette_container{
+  display: block;
+}
+
+#tablette{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin-top: 0;
+}
+
+
+/*-------------------------- contact */
+
+#contact {
+  margin-bottom: 120px;
+}
+
+#formContainer {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 40px 0 40px 0;
+}
+
+.direction{
+  flex-direction: column;
+  margin-top: 0;
+}
+
+.forInput {
+  margin-bottom: 30px;
+}
+
+::placeholder{
+  font-size: 16px;
+}
+
+#name {
+  width: 98%;
+  height: 25px;
+  font-size: 16px;
+}
+
+#firstName {
+  width: 98%;
+  height: 25px;
+  margin-top: 0px;
+  font-size: 16px;
+}
+
+#compagny {
+  width: 98%;
+  height: 25px;
+  font-size: 16px;
+}
+
+#location {
+  width: 98%;
+  height: 25px;
+  margin-top: 0px;
+  font-size: 16px;
+}
+
+#mail {
+  width: 100%;
+  height: 25px;
+  margin-top: 0;
+  font-size: 16px;
+}
+
+#message-contact {
+  width: 100%;
+  height: 90px;
+  margin-top: 0px;
+  font-size: 16px !important;
+}
+
+#button_container {
+  margin-top: 0;
+}
+
+#mailButton {
+  height: 25px;
+  font-size: 16px;
+}
+}
+
+
+/* --------------------------- IPHONE 6/7/8  (375x667) PORTRAIT------------------- */
+
+@media(max-width: 375px) and (max-height:667px) and (orientation:portrait){
+
+/*--------------------------------A propos de moi */
+#lifeLike {
+  margin-top: 23px;
+}
+
+
+/*------------------------------------ Projets  */
+#projects {
+  margin-bottom: 270px;
+}
+
+.slideshow-container{
+  height: 200px;
+}
+}
+/* --------------------------- GALAXY S10 (360x760) PORTRAIT------------------- */
+@media(max-width: 360px) and (max-height:760px) and (orientation:portrait){
+
+  main { 
+    font-size: 16px;
+  }
+ 
+  /*------------------A propos de moi */
+
+  /* section sur fond Blanc*/
+ .whiteBg_Container {
+   max-height: none;
+   display: flex;
+  }
+
+  #presentation {
+   margin-top: 16vh;
+   margin-bottom: 60px;
+  }
+
+  #AboutMe_introContainer {
+   /*-- photo + "<h1> et <p> :à propos de moi"--*/
+   flex-direction: column;
+  }
+ 
+  #myPicture_container {
+    width: 100%;
+    display: flex;
+    height: 210px;
+  }
+ 
+ #myPicture {
+   width: 189px;
+   height: 215px;
+  }
+
+ #aboutMe{
+   width: 100%;
+  }
+ 
+ #aboutMe_title { 
+   font-size: 30px;
+   margin: 20px 0px 35px 0px;
+  }
+ 
+ hr {
+   margin-top: -102px;
+  }
+ 
+ #devLike {
+   margin-top: 220px;
+  }
+ 
+ #lifeLike {
+   margin-top: 25px;
+  }
+
+ #documents_candidacy{
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+
+ .candidacy_btn {
+   font-size: 15px;
+   width: 180px;
+  }
+
+ #cv_button{
+   margin-top: 30px;
+ }
+ 
+ #cv_button img{
+   width: 15px;
+   height: 15px;
+  }
+ 
+ #motivation_button{
+    margin-top: 15px;
+    margin-left: 0px;
+  }
+
+
+ /*---------------------------- Mes compétences  */
+
+ /* section sur fond Bleu*/
+ .blueBg_Container {
+   max-height: none;
+ }
+ 
+ #competences {
+   margin-bottom: 140px;
+ }
+
+ h1 {
+   margin: 30px 0px 40px 0px;
+   font-size:30px;
+  }
+ 
+ #cardsContainer {
+   height: 600px;
+   justify-content: space-around;
+ }
+
+ .cards {
+   margin-bottom: 20px;
+   display: flex;
+   justify-content: center;
+   width: 45%;
+   height:20%;
+ }
+  
+ 
+ /*------------------------------------ Projets  */
+
+  #projects {
+   margin-bottom: 270px;
+  }
+ 
+ .slideshow-container{
+   height: 200px;
+  }
+ 
+ .prev, .next {
+   padding: 8px;
+   font-size: 20px;
+   top: 50%;
+}
+
+ .infosProjects_container {
+   font-size: 16px;
+   margin-top: 0;
+  }
+
+
+ /*---------------------------------formation */
+
+ #formation {
+   margin-bottom: 70px;
+ }
+ 
+ #imgPc_container {
+   display: none;
+  }
+ 
+  #pcLandscape_Container{
+   display: none;
+  }
+ 
+  #tablette_container{
+   display: block;
+  }
+ 
+  #tablette{
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   margin-top: 0;
+ }
+ 
+ 
+ /*--------------------------------contact*/
+ 
+ #contact {
+   margin-bottom: 130px;
+  }
+ 
+ #formContainer {
+   margin-top: 0px;
+   margin-bottom: 0px;
+   padding: 40px 0 40px 0;
+  }
+ 
+ .direction{
+   flex-direction: column;
+   margin-top: 0;
+  }
+ 
+ .forInput { 
+   margin-bottom: 30px;
+  }
+ 
+ ::placeholder{
+   font-size: 16px;
+ }
+ 
+ #name {
+   width: 98%;
+   height: 25px;
+   font-size: 16px;
+  }
+ 
+ #firstName {
+   width: 98%;
+   height: 25px;
+   margin-top: 0px;
+   font-size: 16px;
+  }
+ 
+ #compagny {
+   width: 98%;
+   height: 25px;
+   font-size: 16px;
+  }
+ 
+ #location {
+   width: 98%;
+   height: 25px;
+   margin-top: 0px;
+   font-size: 16px;
+ }
+ 
+ #mail {
+   width: 100%;
+   height: 25px;
+   margin-top: 0;
+   font-size: 16px;
+ }
+ 
+ #message-contact {
+   width: 100%;
+   height: 90px;
+   margin-top: 0px;
+   font-size: 16px !important;
+ }
+ 
+ #button_container {
+   margin-top: 0;
+ }
+ 
+ #mailButton {
+   height: 25px;
+   font-size: 16px;
+ }
+ }

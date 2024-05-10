@@ -1,0 +1,185 @@
+ {% extends "base.twig" %}
+
+	
+ {% block style %}
+	 <link rel="stylesheet" href="style/style.css">
+	 <link rel="stylesheet" href="style/responsive.css">
+	 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+ {% endblock %}
+   
+
+ <body>
+	 {% block header %}
+		 <header>
+			 <nav id="nav">
+			     <div id="logo"><img src="./images/LogoEloOk.png" width="70px" height="70px" alt="logo initiales"></div>
+				 
+				 <ul>
+					 <li>
+						 <a href="#presentation_link">A propos de moi</a>
+					 </li>
+
+					 <li>
+						 <a href="#competences_link">Mes compétences</a>
+					 </li>
+
+					 <li>
+						 <a href="#projects_link">Projets</a>
+					 </li>
+
+					 <li>
+						 <a href="#formation_link">Formation</a>
+					 </li>
+
+					 <li>
+						 <a href="#contact_link">Contact</a>
+					 </li>
+
+					 <li>
+						 <a href="/login">Login</a> 
+					 </li>
+                  </ul>
+
+				  <div id="icons"> </div>
+			 </nav>
+
+			
+			 
+		 </header>
+	 {% endblock %}
+		
+
+		
+     {% block main %}
+		     <main>
+			     <!--A propos de moi-->
+			     <section class="whiteBg_Container" id="presentation_link">
+			         <section class='contentSection' id="presentation">
+				         <div id="AboutMe_introContainer">
+					         <div id="myPicture_container" class="animate__animated animate__backInLeft"> <img src="./images/photoElo.png" alt="ma photo" id="myPicture"></div>
+
+					         <div id="aboutMe" class="animate__animated animate__backInRight">
+						         <h1 id="aboutMe_title">A propos de moi.</h1>
+						         <p>
+							         Je m'appelle Elodie, en reconversion professionnelle,
+							         <br>
+							         je suis en formation à l'école Ri7 d'Aubagne, pour devenir développeur spécialisé en front-end, et/ou en CMS.
+						         </p>
+					         </div>
+				         </div>
+
+				         <hr>
+
+			  	         <div id="devLike" class="animate__animated animate__backInLeft">
+					         <p class="likePart_p">
+						         <b>Ce que j'aime dans le dév :</b><br>
+						         créer et réaliser la partie visuelle des projets, en partant d'une page de code "blanche", ou en personnalisant des thèmes CMS, et voir progressivement le site ou l'appli prendre vie, trouver des solutions pour répondre à des besoins, acquérir de nouvelles connaissances pour augmenter en compétences et pouvoir créer d'avantage.
+					         </p>
+				         </div>
+
+				         <div id="lifeLike" class="animate__animated animate__backInRight">
+					         <p class="likePart_p">
+						         <b>Ce que j'aime dans la vie :</b><br>
+						         la musique, voyager, retrouver mes amis et ma famille autour d'un bon repas, faire du sport ( surtout en aimant les bons petits plats... <img src="/images/emoticon.png" alt="emoticone clin d'oeil"  id="emoticon"> ). 
+					         </p>
+				         </div>
+                         <div id="documents_candidacy"class= "animate__animated animate__backInLeft">
+						     <button id="cv_button" class="candidacy_btn">mon cv<img src="./images/IconeCv.png" alt="picto cv"></button>
+						     <button id="motivation_button" class="candidacy_btn">Une demande originale...</button>
+						 </div>
+			         </section>
+			     </section>
+
+			     <!--Compétences !-->
+			     <section class="blueBg_Container" id="competences_link">
+				     <section class='contentSection' id="competences">
+					     <h1>Mes compétences</h1>
+					     <div id="cardsContainer">
+						     <div class="cards" data-aos="flip-left"><img src="images/htmlCssImgCard.png" alt="icones html et css"></div>
+						     <div class="cards center" data-aos="flip-left" data-aos-delay="500"><img src="./images/jsImgCard.png" alt="icone js"></div>
+						     <div class="cards left" data-aos="flip-left" data-aos-delay="1300"><img src="./images/phpImgCard.png" alt="icone php"></div>
+					         <div class="cards" data-aos="flip-left"data-aos-delay="2100"><img src="./images/nodejsImgCard.png" alt="logo mongodb"></div>
+						     <div class="cards center" data-aos="flip-left"data-aos-delay="2900"><img src="./images/mongodbImgCard.png" alt="logo mongodb"></div>
+						     <div class="cards left" data-aos="flip-left"data-aos-delay="3800"><img src="./images/sqlImgCard.png" alt="logo mongodb"></div>
+						     <div class="cards" data-aos="flip-left" data-aos-delay="4600"><img src="./images/bootstrapImgCard.png" alt="icone bootstrap"></div>
+						     <div class="cards center" data-aos="flip-left"data-aos-delay="5400"><img src="./images/wordpressImgCard.png" alt="logo mongodb"></div>
+						     <div class="cards left" data-aos="flip-left"data-aos-delay="6200"><img src="./images/figmaImgCard.png" alt="logo mongodb"></div>
+					     </div>
+				     </section>
+			     </section>
+
+			     <!--Projets!-->
+			     <section class="whiteBg_Container" id="projects_link">
+			         <section class='contentSection' id="projects">
+				         <h1>Projets</h1>
+					     <div class="slideshow-container">       
+				             {% for project in projects %}
+						         <div class="mySlides fade">
+								     <a class="prev" onclick="manualSlideMode(-1)">&#10094;</a>
+                                     <a class="next" onclick="manualSlideMode(1)">&#10095;</a>
+							         <img  id="imgProject" src="./uploads/{{project.img}}" alt="image des projets">
+							         
+									 <div class="infosProjects_container">
+									     <div id="spanInfos_Container">
+									         <span id ="projectTitle"> <strong>{{project.name}}</strong></span>	
+							                 <span id ="techno"> <strong>{{project.technology}}</strong></span>
+					                     </div>
+										 <div id= "responsive"><b>Responsive design : {{project.responsiveDesign}}</b></div>
+										 <div id="linksProject_Container">
+										     <a href="{{project.url}}" id="url" target="_blank"> <strong>voir le projet</strong></a>
+							                 <a href="{{project.githubUrl}}" id="githubUrl" target="_blank"><strong>voir le code</strong></a>
+						                 </div>
+										
+									 </div>
+								 </div>         
+						     {% endfor %}
+                         </div>
+			         </section>
+		         </section>
+
+			     <!--Formation!-->
+			     <section class="blueBg_Container" id="formation_link">
+			         <section class='contentSection' id="formation">
+				         <h1>Formation</h1>
+				         <div id="imgPc_container"><img id="pc" src="./images/ecransFormation.png" alt="contenu formation ri7 contenu dans écran de pc " class="animate__animated animate__backInLeft"></div>
+				         <div id="pcLandscape_Container" ><img id="pcLandscape" src="./images/ecranFormation_Ls.png" alt="contenu formation ri7 contenu dans écran de pc " class="animate__animated animate__backInLeft"></div>
+						 <div id="tabLandscape_Container" ><img id="tabLandscape" src="./images/tabLandscape.png" alt="contenu formation ri7 contenu dans tablette " class="animate__animated animate__backInLeft"></div>
+                         <div id="tablette_container"><img id="tablette_container" src="./images/tablette.png" width="100%" alt="contenu formation ri7 contenu dans tablette " class="animate__animated animate__backInLeft"></div>				  
+			         </section>
+                 </section>
+
+			     <!--Contact!-->
+                 <section class="whiteBg_Container" id="contact_link">
+			         <section class='contentSection' id="contact">
+			             <h1>Contact</h1>
+
+				         <div id="formContainer"> 
+					         <form action ="/sendMail" method="post"> <!--ds action je mets la route créee dans mailerRouter pour me contacter!-->
+					             <div class ="direction">	
+					                 <input type="text" class='forInput'id="name" name="name" placeholder ="Nom : ">
+					                 <input type="text" class='forInput' id="firstName" name="firstName" placeholder ="Prénom : ">
+                                 </div>
+
+					             <div class ="direction ">
+						             <input type="text" class='forInput' id="compagny" name= "compagny" placeholder="Nom de l'entreprise : ">
+						             <input type="text" class='forInput' id="location" name="location" placeholder="Ville : ">
+                                 </div>
+
+					             <div class="width_css">
+						             <input type="text" class='forInput' id="mail" name="mail" placeholder="E-mail : ">
+                                 </div>
+
+					             <div class="width_css">
+						             <textarea type="text" class='forInput'  id="message-contact" name="message" placeholder="Message : "></textarea>
+					             </div>
+
+					             <div id="button_container"><button id="mailButton" type ="submit"> envoyer</button></div>
+					         </form>
+				         </div>
+			         </section>
+		     </section>
+		 </main>
+	 {% endblock %}
+ </body>
+</html>

@@ -1,0 +1,325 @@
+/*FONT*/
+@font-face {
+    font-family: "proxima nova";
+    src: url("./font/proximanova-regular.otf");
+  }
+  
+  * {
+    font-family: "proxima nova";
+    font-size: 20px;
+  }
+
+  body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  header{
+    width: 100%;
+    height:100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: blue;
+  }
+
+  #headerContent{
+    margin: 15px;
+    width: 99%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+ 
+  #logo {
+    height:90%; 
+    display: flex;
+    align-items: center;
+  }
+
+ #logo img{
+   width: 50%;
+  }
+
+  nav{
+    width: 22%;
+  }
+
+  ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-around;
+  }
+
+  li:hover{
+    transform: scale(1.1);
+  }
+
+  a{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+  }
+
+  main{
+    width: 60%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  h1{
+    text-align: center;
+    font-size: 40px;
+    text-shadow: 2px 2px 2px 1px grey;
+    color:#2165e3;
+    margin: 100px 0 0 0;
+  }
+
+  form{
+    margin-top: 10%;
+    margin-bottom: 3%;
+    padding: 2%;
+    height: 25%;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(143, 143, 247, 0.239);
+    box-shadow: 1px 1px 1px 1px grey;
+    border-radius: 10px;
+  }
+  
+
+  input{
+    width: 60%;
+    margin-bottom: 3%;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 2px 2px 1px 0px grey;
+  }
+
+  button{
+    margin-top: 1%;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px 0px grey;
+  }
+
+  #msg-error {
+    height: 40px;
+    color: red;
+  }
+
+/* ---------------------------laptop (1440x900) ------------------- */
+ @media(max-width: 1440px){
+  h1{
+    margin: 60px 0 0 0;
+  }
+}
+
+
+  /* --------------------------- IPad pro 12.9-inch (1366x1163) PAYSAGE------------------- */
+
+@media(max-width: 1366px) and (max-height:1163px) and (orientation:landscape){
+
+  main {
+    width: 70%;
+  }
+
+  form{
+    margin-top: 15%;
+  }
+
+  input{
+    width: 70%;
+  }
+}
+ 
+
+/* ---------------------------laptop (1280x800) ------------------- */
+
+@media(max-width: 1280px) and (max-height:800px){
+
+  form{
+    height: 30%;
+  }  
+}
+
+
+/* --------------------------- IPad pro 12.9-inch (1163x1366) PORTRAIT------------------- */
+
+@media(max-width: 1163px) and (max-height:1366px) and (orientation:portrait){
+  
+  main{
+    width: 70%;
+  }
+
+  form{
+    margin-top: 20%;
+  }
+
+  input{
+    width: 70%;
+  }
+}
+
+
+/*--------------------------- I Pad pro (1024x768) PAYSAGE------------------- */
+
+@media(max-width: 1024px) and (max-height:768px) and (orientation:landscape){
+
+h1{
+  margin: 50px 0 0 0;
+}
+}
+
+
+/*--------------------------- I Pad pro (768x1024) PORTRAIT------------------- */
+
+@media(max-width: 768px) and (max-height:1024px) and (orientation:portrait){
+
+  main{
+    width: 80%;
+  }
+ 
+  input{
+    width: 80%;
+  }
+}
+
+
+/* --------------------------- GALAXY S9/ NOTE 8 / S8 /S9 (740x360) PAYSAGE------------------- */
+
+@media(max-width:740px) and (max-height:360px) and (orientation:landscape){ 
+
+  * { 
+    font-size: 16px;
+  }
+
+  main{
+    width: 85%;
+  }
+
+  h1{
+    font-size: 20px;
+    margin: 20px 0 0 0;
+  }
+
+  form{
+    margin-top: 5%;
+    margin-bottom: 2%;
+    height: 50%;
+  }
+
+  input{
+    width: 85%;
+  }
+}
+
+
+/* --------------------------- IPHONE 6/7/8 PLUS (736x414) PAYSAGE------------------- */
+
+@media(max-width:736px) and (max-height:414px) and (orientation:landscape){ 
+  
+  * { 
+    font-size: 16px;
+  }
+
+  main{
+    width: 85%;
+  }
+
+  h1{
+    font-size: 20px;
+    margin: 20px 0 0 0;
+  }
+
+  form{
+    margin-top: 5%;
+    margin-bottom: 2%;
+    height: 50%;
+  }
+
+  input{
+    width: 85%;
+  }
+}
+
+
+/* --------------------------- Pad 6/7/8 Plus (414x736) PORTRAIT------------------- */
+
+@media(max-width: 414px) and (max-height:736px) and (orientation:portrait){
+
+  nav{
+   width: 40%;
+  }
+
+ 
+  * {   
+    font-size: 16px;
+  }
+
+  main{
+    width: 100%;
+  }
+
+  h1{
+    font-size: 20px;
+    margin: 50px 0 0 0;
+  }
+
+  form{
+   margin-top: 20%;
+   margin-bottom: 2%;
+   height: 25%;
+   margin-bottom: 4%;
+ }
+
+ input{
+   width: 90%;
+  }
+}
+
+
+/* --------------------------- galaxy S9/Note 8/S8  (360x740) PORTRAIT------------------- */
+
+@media(max-width: 360px) {
+  nav{
+    width: 40%;
+  }
+
+  *{
+    font-size: 16px;
+  }
+  
+  main{
+    width: 100%;
+  }
+  
+  h1{
+    font-size: 20px;
+    margin: 50px 0 0 0;
+  }
+  
+  form{
+    margin-top: 20%;
+    height: 25%;
+    margin-bottom: 4%;
+  }
+  
+  input{
+    width: 90%;
+  }
+}

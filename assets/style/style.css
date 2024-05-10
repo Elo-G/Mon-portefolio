@@ -1,0 +1,593 @@
+/*FONT*/
+@font-face {
+  font-family: "proxima nova";
+  src: url("./font/proximanova-regular.otf");
+}
+
+* {
+  font-family: "proxima nova";
+}
+
+
+/*-------------------------- BODY --------------------------------*/
+body {
+  width:100%;
+  padding: 0;
+  margin:0;
+
+}
+
+
+/*-------------------------- HEADER --------------------------------*/
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 90px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: blue;
+  color: white;
+  font-size: 20px;
+  z-index: 1;
+}
+
+
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size:calc(0.7rem + 0.7vw) ;
+  padding: 10px;
+
+}
+
+#logo {
+  height: 100%; 
+  display: flex;
+  align-items: center;
+ }
+
+
+nav ul {
+  width: 75%;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0 50px;
+}
+
+nav li{
+  list-style-type: none; /* pour enlever les puces*/
+}
+nav li:hover {
+  transform: scale(1.1);
+}
+
+nav a, a:active {
+  color: white !important ;
+  text-decoration: none;
+}
+
+#icons{
+  cursor: pointer;
+  display: none;
+}
+
+/*--------------------------------------------MAIN------------------------------------------------*/
+
+main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  font-size: 22px;
+}
+
+/* section sur fond Blanc*/
+.whiteBg_Container {
+  width: 100%;
+  max-height: 100vh;
+  display: flex;
+  justify-content: center;
+  background-color: white;
+}
+
+
+/*---------------------------- A propos de moi  */
+
+.contentSection {
+  width: 60%;
+  height: 100%;
+}
+
+#presentation {
+  margin-top: 15vh;
+  margin-bottom: 300px;
+}
+
+#AboutMe_introContainer {
+  /*-- photo + "<h1> et <p> :à propos de moi"--*/
+  display: flex;
+  justify-content: space-between;
+  height: 380px;
+}
+
+#myPicture_container {
+  width: 350px;
+  height:380px;
+}
+
+#myPicture {
+  width: 350px;
+  height: 380px;
+}
+
+#aboutMe {
+  display: flex;
+  width: 60%;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#aboutMe_title {
+  color: #2165e3;
+  font-size: 65px;
+  text-shadow: 2px 3px 3px rgba(0, 0, 0, 0.48);
+  margin: 60px 0px 60px 0px;
+}
+
+#aboutMe p{
+  margin-top: 0;
+}
+
+hr {
+  margin-top: -20px;
+  width: 100%;
+}
+
+#devLike {
+  margin-top: 50px;
+  animation-delay: 1500ms;
+}
+
+.likePart_p{
+  margin: 0;
+}
+
+#lifeLike {
+  margin-top: 50px;
+  animation-delay: 2500ms;
+}
+
+#emoticon{
+  width: 17px;
+}
+
+#documents_candidacy{
+  display: flex;
+  justify-content:start;
+  width: 100%;
+  animation-delay: 3500ms;
+}
+
+.candidacy_btn {
+  width: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 50px;
+  padding: 5px;
+  background-color:#4DD5FF;
+  border: blue;
+  border-radius: 5px;
+  font-size: 20px;
+  color: white;
+  box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.48);
+}
+
+.candidacy_btn:hover{
+  background-color:blue;
+}
+
+#cv_button{
+  display: flex;
+  justify-content: center;
+}
+#cv_button img{
+  margin-left: 10px;
+}
+
+#motivation_button{
+  margin-left: 70px;
+  animation: scintillate 2s infinite;
+}
+
+#motivation_button:hover {
+  animation: none; /* Désactive l'animation au survol */
+  background-color: blue;
+}
+
+
+/* paramétrage de l'animation scintillate appliquée à motivation_button : */
+@keyframes scintillate {
+  0% {
+    background-color:#4DD5FF;
+  }
+  50% {
+    background-color:#009dcd;
+    font-weight: bolder;
+  }
+  100% {
+    background-color:#4DD5FF;
+  }
+}
+
+
+
+/*------------------------------ Mes compétences */
+
+/* section sur fond Bleu*/
+.blueBg_Container {
+  width: 100%;
+  max-height: 100vh;
+  display: flex;
+  justify-content: center;
+  background-color: rgba(143, 143, 247, 0.239);
+}
+
+#competences {
+  margin-bottom: 300px;
+}
+
+h1 {
+  color: #2165e3;
+  font-size: 65px;
+  text-shadow: 2px 3px 3px rgba(0, 0, 0, 0.48);
+  margin: 60px 0px 60px 0px;
+}
+
+#cardsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 0 0 20px 0;
+  height:700px ;
+}
+
+
+.center{
+  display: flex;
+  justify-content: center;
+}
+
+.left{
+  display: flex;
+  justify-content: end;
+}
+
+.cards {
+  margin-bottom: 20px;
+  display: flex;
+  width: 33.3%;
+  height:27%;
+
+}
+
+.cards img{
+  width: 80%;
+  height:100%;
+  box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.48);
+  border-radius: 8%;
+}
+
+
+/*------------------------------------ Projets  */
+#projects {
+  margin-bottom: 300px;
+}
+
+/*----------code caroussel:*/
+
+/* Slideshow container*/
+.slideshow-container {
+  margin: auto;
+  width: 100%;
+
+} 
+
+.mySlides{
+  position: relative;
+}
+
+/*Boutons Next & previous*/
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 38%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Positionnement du btn next à droite:*/
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* bg utilisé pr effet transition fade (l'effet fondu)*/
+.mySlide .fade{
+  background-color: #717171;
+}
+
+/* animation "fondu" appliqué sur la classe fade */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+/*règle @keyframes appliquée aux éléments de classe .fade
+("@kf":défini les étape d'une 'animation - "from" = état initial de l'élément au début de l'anim, 
+"to" = son état final à la fin de l'anim)*/
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+#imgProject {
+  width: 100%;
+  margin-top: 0px;
+}
+
+.infosProjects_container{
+  color:blue;
+  font-size: 23px;
+  margin-top:1%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ 
+}
+
+#spanInfos_Container{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+#techno{
+  margin-left: 1%;
+}
+
+#linksProject_Container{
+  width: 27%;
+  display: flex;
+  justify-content: space-between;
+  margin-top:3%;
+  margin-bottom: 1%;
+}
+
+#url {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #4DD5FF;
+  border: 1px solid #4DD5FF;
+  border-radius: 5px;
+  padding: 8px 15px;
+  background-color:#4DD5FF;
+  font-size: 20px;
+  color: white;
+  box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.48);
+}
+
+#url:hover{
+  background-color: blue;
+  border: blue
+}
+
+#githubUrl{
+  display: flex;
+  align-items: center;
+  text-decoration:none;
+  color: #4DD5FF;
+  border: 1px solid #4DD5FF;
+  border-radius: 5px;
+  padding: 8px 15px;
+  background-color:#4DD5FF;
+  font-size: 20px;
+  color: white;
+  box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.48);
+
+}
+
+
+#githubUrl:hover{
+  background-color: blue;
+  border: blue
+}
+
+#responsive{
+   color:blue;
+   font-size: 23px;
+   margin-top:1.5%;
+   text-align: center;
+   
+}
+
+
+/*--------------------------  FORMATION   --------------------------------*/
+#formation {
+  margin-bottom: 300px;
+}
+
+
+#imgPc_container{
+  width: 100%;
+  height: 695px;
+}
+
+#pc {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  margin-top: 0;
+}
+
+
+#pcLandscape_Container{
+  display: none;
+}
+
+#tabLandscape_Container{
+  display: none; 
+}
+
+#tablette_container{
+  display: none;
+ 
+ }
+
+
+
+/*-------------------------- CONTACT  --------------------------------*/
+
+#contact {
+  margin-bottom: 300px !important;
+}
+
+#formContainer {
+  margin-top: 69px;
+  margin-bottom: 121px;
+  padding: 60px 0 60px 0;
+  background-color: #2165e3;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  border-radius: 5px;
+
+  box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.35);
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width:80%;
+
+}
+
+.direction {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 20px;
+  padding: 0;
+}
+
+.forInput {
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+#name {
+  width: 45%;
+  height: 40px;
+  box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.2);
+  border: none;
+  font-size: 20px;
+}
+
+#firstName {
+  width: 45%;
+  height: 40px;
+  margin-top: 0px;
+  box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.2);
+  border: none;
+  font-size: 20px;
+}
+
+#compagny {
+  width: 45%;
+  height: 40px;
+  box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.2);
+  border: none;
+  font-size: 20px;
+}
+
+#location {
+  width: 45%;
+  height: 40px;
+  margin-top: 0px;
+  box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.2);
+  border: none;
+  font-size: 20px;
+}
+
+.width_css{
+  width: 100%;
+  display: flex;
+  justify-content:center;
+}
+
+#mail {
+  width: 100%;
+  height: 40px;
+  margin-top: 20px;
+  box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.2);
+  border: none;
+  font-size: 20px;
+}
+
+#message-contact {
+  width: 100%;
+  height: 130px;
+  margin-top: 20px;
+  box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.2);
+  border: none;
+  font-size: 20px !important;
+  font-family: proxima nova !important;
+}
+
+#button_container {
+  margin-top: 30px;
+}
+
+#mailButton {
+ 
+  height: 40px;
+  color: black;
+  border: blue;
+  border-radius: 5px;
+
+  font-size: 20px;
+  background-color: white;
+  box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.3);
+}
+
+#mailButton:hover{
+  background-color: #4DD5FF; 
+  color: white;
+}
+
+
+
+

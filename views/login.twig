@@ -1,0 +1,38 @@
+
+{% extends "base.twig" %}
+{% block style %} <link rel="stylesheet" href="style/login.css">{% endblock %}
+
+	<body>
+	 {% block header %}
+	     <header>
+		     <div id="headerContent">
+		 	     <div id="logo"><img src="./images/LogoEloOk.png"  alt="logo initiales"></div>
+			     <nav class="div-connex">
+				     <ul>
+					     <li>
+						     <a href="/">Accueil</a> 
+					     </li>
+				     </ul>
+			     </nav>
+		     </div>
+		 </header>
+	 {% endblock %}
+		
+	 {% block main %}
+	 <main>
+		 <h1 class="h1-log">Se connecter</h1>
+		 
+		 <form action="/login" method="POST">
+			 <label for="email">email</label>
+			 <input type="text" id="email" name="mail">
+			 <label for="password">mot de passe</label>
+			 <input type="password" id="password" name="password">
+
+			<button type="submit">valider</button>
+		</form>
+
+		<div id="msg-error">{{errConnect}}</div>
+	 </main>
+	 {% endblock %}
+	</body>
+</html>

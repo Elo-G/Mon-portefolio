@@ -1,0 +1,50 @@
+{% extends "base.twig" %}
+{% block style %} <link rel="stylesheet" href="style/addProject.css">{% endblock %}
+
+ <body>
+     {% block header %}
+	     <header>
+		     <div id="headerContent">
+		 	     <div id="logo"><img src="./images/LogoEloOk.png" alt="logo initiales"></div>
+			     <nav class="div-connex">
+				     <ul>
+					     <li>
+						     <a href="/">Accueil</a> 
+					     </li>
+
+					     <li>
+					    	 <a href="/logout">Déconnexion</a> 
+					     </li>
+				     </ul>
+			     </nav>
+		     </div>
+		 </header>
+     {% endblock %}
+        
+     {% block main %}
+	     <main>
+	         <h1>Ajouter un projet</h1>
+
+             <!--Formulaire pour ajouter de nouveaux projets une fois loguée!-->
+		     <form action="/addProject" method="POST" enctype="multipart/form-data">
+                                                                                                                                    
+		         <label for="">nom</label>
+		         <input type="text" id="" name="name">
+		         <label for="">techno</label>
+		         <input type="text" id="" name="technology">
+				 <label for="">responsive design pour :</label>
+		         <input type="text" id="" name="responsiveDesign">
+                 <label for="">url</label>
+		         <input type="text" id="" name="url">
+                 <label for="">githubUrl</label>
+		         <input type="text" id="" name="githubUrl">
+                 <label for="">image</label>
+		         <input type="file" name="img">
+
+		         <button type="submit">valider</button> 
+	         </form>
+		 </main>
+     {% endblock %}	
+  </body>
+</html>
+
